@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ClipToImg"
+version = "0.1.0"
+description = "Script for converting clipboard image to file"
+authors = ["Ivan Nikolaev-Axenov <nikolaevaxenov@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pyperclip = "^1.8.2"
+Pillow = "^9.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+autopep8 = "^1.6.0"
+
+[tool.poetry.scripts]
+cliptoimg = "cliptoimg.cliptoimg:run"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
